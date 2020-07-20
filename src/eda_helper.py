@@ -4,7 +4,6 @@ import numpy as np
 import pandas as pd
 import json
 from typing import Dict, List
-from geotext import GeoText
 
 
 def parse_json(json_string:str) -> any:
@@ -30,12 +29,18 @@ def parse_json(json_string:str) -> any:
         pass
     return res
 
+def create_spark_df(path):
+    df = spark.read.json(path)
+    return df
+def create_spark_rdd(path):
+    rdd = sc.textFile(path)
+    return rdd
 
-def parse_country(text:str) -> dict:
-    res = GeoText(text).country_mentions
-    return res if res != {} else np.nan
+# def parse_country(text:str) -> dict:
+#     res = GeoText(text).country_mentions
+#     return res if res != {} else np.nan
 
-def parse_city(text:str) -> dict:
-    res = GeoText(text).cities
-    return res if res else np.nan
+# def parse_city(text:str) -> dict:
+#     res = GeoText(text).cities
+#     return res if res else np.nan
 
