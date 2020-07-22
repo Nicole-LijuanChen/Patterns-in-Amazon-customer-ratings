@@ -29,18 +29,25 @@ def parse_json(json_string:str) -> any:
         pass
     return res
 
-def create_spark_df(path):
-    df = spark.read.json(path)
+def clean_data(rdd, category):
+    '''Returns a pandas dataframe from a rdd, 
+        filter the ratings that is not verified.
+        dataframe contains year, ratings, and category.
+    '''
+    overall = (rdd.filter(lambda row: row['verified'])
+                .map(lambda row: row['overall'])
+                )
+    years   = (rdd.filter(lambda row: row['verified'])
+                    .map(lambda row: row['reviewTime'])
+                    .map(lambda row: row.split(","))
+                    .map(lambda row: int(row[1]))
+                )
+    lengh = overall.count()
+    category_list = [str(category)]*lengh
+    df = pd.DataFrame({'ratings': overall.collect(),
+                        'years': years.collect(),
+                        'category': category_list 
+                        })
     return df
-def create_spark_rdd(path):
-    rdd = sc.textFile(path)
-    return rdd
 
-# def parse_country(text:str) -> dict:
-#     res = GeoText(text).country_mentions
-#     return res if res != {} else np.nan
-
-# def parse_city(text:str) -> dict:
-#     res = GeoText(text).cities
-#     return res if res else np.nan
 
