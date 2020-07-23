@@ -95,7 +95,13 @@ Ha: The mean ratings of these two category is different
 
 I search the data from https://nijianmo.github.io/amazon/index.html. In Beaty cotegory, there are 5,269 customer ratings and reviews from 2007 to 2018. Books dataset includes 27,164,982 reviews from 1997 to 2018. 
 
+Raw data:
+
 <img src='https://github.com/Nicole-LijuanChen/Patterns-in-Amazon-customer-ratings/blob/master/images/row_data.png?raw=true'></img>
+
+Scan the data to determine what I need. Using pyspark to clean data. Make the data readable.
+
+<img src='https://github.com/Nicole-LijuanChen/Patterns-in-Amazon-customer-ratings/blob/master/images/data_sample_view.png?raw=true'></img>
 
 
 
