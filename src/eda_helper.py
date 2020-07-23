@@ -67,7 +67,7 @@ def clean_data(rdd, category):
                         })
     return df
 def avg_by_year(df):
-    """calculate the average ratings by year
+    """calculate the average ratings and standard deviations by year
 
     Parameters
     ----------
@@ -75,18 +75,51 @@ def avg_by_year(df):
 
     Returns
     -------
-    by_year_df: a dataframe contains year,the average ratings by year
+    by_year_df: a dataframe contains year,the average ratings by year,
+                and tandard deviations by year
     """
     #calculate the average ratings by year
     avg_by_year_df = df.groupby('years')['ratings'].mean()
-
+    
+    #calculate the std ratings by year
+    std_by_year_df = df.groupby('years')['ratings'].std()
     #convert Series to pd.dataframe
     avg_by_year_df = pd.DataFrame({'year': avg_by_year_df.index.tolist(),
-                  'avg_ratings': avg_by_year_df})
-
+                  'avg_ratings': avg_by_year_df,
+                   'std': std_by_year_df})
+    
     #reset index
     avg_by_year_df.reset_index(drop=True, inplace=True)
     
     return avg_by_year_df
 
+
+
+def ratings_mean(df):
+    """calculate the ratings mean from the given dataframe
+    parameters
+    ----------
+    df (pandas dataframe): a dataframe cotanis all ratings 
+
+    Returns
+    -------
+    mean(float): mean of ratings, keep 4 decimal
+    """
+    mean_value = df['ratings'].mean()
+    mean_value = round(mean_value,4) 
+    return mean_value
+
+def ratings_std(df):
+    """calculate standard deviation of ratings from the given dataframe
+    parameters
+    ----------
+    df (pandas dataframe): a dataframe cotanis all ratings 
+
+    Returns
+    -------
+    standard deviation(float): standard deviation of ratings, keep 4 decimal
+    """
+    std_value = df['ratings'].std()
+    std_value = round(std_value,4) 
+    return std_value
 
