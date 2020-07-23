@@ -119,7 +119,7 @@ Data in src/data/, the raw datasets: All_Beauty_5.json      Books_5.json
 ## Data Analysis
 According to the ratings count, more than 65% of customers scored a 5 on both products, but 91.8% customer rate Beauty at 5 star. It seems that customers are more satisfied with cosmetics than books. This requires further analysis of the data.
 
-<img src='https://github.com/Nicole-LijuanChen/Patterns-in-Amazon-customer-ratings/blob/master/images/ratings_count.png?raw=true' width='600' height='500'></img>
+<img src='https://github.com/Nicole-LijuanChen/Patterns-in-Amazon-customer-ratings/blob/master/images/ratings_count.png?raw=true' width='800' height='auto'></img>
 
 Calculate the average ratings by year, and compare the two categories. The data shows that the mean ratings of Beauty is greater than that of Books.
 
