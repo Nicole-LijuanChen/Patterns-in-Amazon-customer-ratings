@@ -127,6 +127,15 @@ Conclusion:
 # The mean ratings of Beauty and Books are different.
 
 
+## Final thoughts
+The data analysis showed that the mean ratings of Beauty was higher than that of Books, which is contrary to my initial assumption. But the mean ratings cannot tells me everthing. When I compare their annual standard deviation, I find that the change in standard deviation of Books is smaller than that of Beauty. 
+This shows that customers have similar experience in buying books. Some of my assumptions are still close to the results of data analysis: Amazon has more experience in selling books than Beauty goods.
+
+
+## Future Steps
+Next, I want to dig more data, for example, analyze the high and low rating reviews. For a 5-point product, what keywords are included in the customer's reviews. For products with 2 or 1 ratings, what is the reason that customers are dissatisfied.
+Through deeper data mining, to predict whether a product will have a high rating.
+
 
 
 
@@ -135,17 +144,3 @@ Conclusion:
 
 <!-- Another line -->
 ---
-
-## Contributors
-[Teammate 1](https://github.com/atsai24)  | [Teammate2](https://github.com/boogiedev) | [Teammate 3](https://github.com/Nicole-LijuanChen)
----|---|---|
-Alex Tsai  |  Wesley Nguyen  | Nicole Chen  |
-
-
-## Credits
-<!-- You can fill in packages, or particularly helpful modules, instructors, etc in here that you'd like to credit. -->
-
-
-
-## License
-[MIT ©](https://choosealicense.com/licenses/mit/)
