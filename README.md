@@ -22,7 +22,7 @@
 
 <!-- Brief Indented Explaination, you can choose what type you want -->
 <!-- Type 1 -->
-> An Exploratory Data Analysis of Tweets during the 2017 French Presidential Election using PySpark 
+>Compare the average ratings in Beauty and Book category.
 
 
 
@@ -44,6 +44,7 @@ When linking section titles with spaces in between, you must use a '-' (dash) to
 ## Table of Contents
 
 <!-- Overview Section -->
+
 - [Overview](#overview)
   - [Background & Motivation](#context)
   - [Hypothesis](#context)
