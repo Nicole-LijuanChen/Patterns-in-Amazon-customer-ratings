@@ -3,7 +3,7 @@
 <div class='header'> 
 <!-- Your header image here -->
 <div class='headingImage' id='mainHeaderImage' align="center">
-    <img src="https://d25yuvogekh0nj.cloudfront.net/2019/08/Twitter-Banner-Size-Guide-blog-banner-1250x500.png" width='1200' height='auto' ></img>
+    <img src="https://github.com/Nicole-LijuanChen/Patterns-in-Amazon-customer-ratings/blob/master/images/amazon.jpg" width='1200' height='600' ></img>
 </div>
 
 <!-- Put your badges here, either for fun or for information -->
@@ -123,8 +123,9 @@ Ttest result:
 pvalue=1.9895758749664697e-152
 
 Conclusion:
-# p-value is small than alpha, there are enough advience to reject H0.
-# The mean ratings of Beauty and Books are different.
+
+p-value is small than alpha, there are enough advience to reject H0.
+The mean ratings of Beauty and Books are different.
 
 
 ## Final thoughts
