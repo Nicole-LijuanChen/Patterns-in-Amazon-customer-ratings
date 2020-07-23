@@ -85,36 +85,29 @@ Source: statista.com
 ### Hypothesis
 The hypothesis is that the average ratings in Books is different with Beauty, and the raings in Books is higher than Beauty.
 
-The first reason I set this assumption is that the quality of the book is relatively easy to measure. However, There is a personal preference for the quality of the cosmetics. Secondly, Amazon was originally engaged in book selling,  
+The first reason I set this assumption is that the quality of the book is relatively easy to measure. However, There is a personal preference for the quality of the cosmetics. Secondly, Amazon was originally engaged in book selling, but it started sold Beauty goods in 2007. Amazon will be more experienced than Beauty in product selection, storage and deliver of books. Customers will have a better buying experience and give them higher ratings
+
+H0: The mean ratings of these two category is the same 
+Ha: The mean ratings of these two category is different
 <!-- SECTION 1 -->
-## Data
+## Data PREP
 
 
-<img src='https://github.com/atsai24/spark-case-study/blob/master/images/user_data.png?raw=true'></img>
+I search the data from https://nijianmo.github.io/amazon/index.html. In Beaty cotegory, there are 5,269 customer ratings and reviews from 2007 to 2018. Books dataset includes 27,164,982 reviews from 1997 to 2018. 
+
+<img src='https://github.com/Nicole-LijuanChen/Patterns-in-Amazon-customer-ratings/blob/master/images/row_data.png?raw=true'></img>
 
 
 
 <!-- SECTION 2 -->
-## Feature Engineering
-After examining the schema I decided to look into the hashtags to see what may have been trending at the time. I was able to derive the most commonly used hashtags by creating a RDD of all hashtags used in each tweet, setting them to lowercase, and then using Counter to find the total counts of each hashtag.
-
-I was also interested in seeing if certain hashtags garnered more likes or retweets compared to other hashtags, specifically #macron vs. #lepen. To do this, I built a Pandas Dataframe consisting of hashtags, favorite count, and retweet count of each individual tweet. I then grouped by hashtag to find the aggregate sum and mean of likes and retweets of each hashtag. All aggregate values were found to be 0. This is where I learned to always check the data values before spending hours trying to derive information from it. 
+## Data Analysis
 
 
 
 <!-- SECTION 3 -->
-## Visualizations
+## Hypothesis Testing
 
 
-```python
-wordcloud = WordCloud().generate(' '.join([x.lower() for x in tweets_entities.take(8000)]))
-plt.imshow(wordcloud, interpolation='bilinear')
-plt.axis("off")
-plt.show()
-plt.savefig('images/hashtag_wordcloud.png')
-```
-
-Here, I used wordcloud to create a visualization of the most commonly used hashtag. As you can see, the most popular hashtag was “#whirlpool”, followed by French TV shows like “#tpmp” and “#quotidian”. The most commonly used political hashtag was “#macron”, who eventually won the presidency. 
 
 <img src=‘images/hashtag_wordcloud.png’></img>
 
