@@ -88,6 +88,7 @@ The hypothesis is that the average ratings in Books is different with Beauty, an
 The first reason I set this assumption is that the quality of the book is relatively easy to measure. However, There is a personal preference for the quality of the cosmetics. Secondly, Amazon was originally engaged in book selling, but it started sold Beauty goods in 2007. Amazon will be more experienced than Beauty in product selection, storage and deliver of books. Customers will have a better buying experience and give them higher ratings
 
 H0: The mean ratings of these two category is the same 
+
 Ha: The mean ratings of these two category is different
 <!-- SECTION 1 -->
 ## Data PREP
@@ -109,49 +110,27 @@ Scan the data to determine what I need. Using pyspark to clean data. Make the da
 ## Data Analysis
 
 
+<img src='https://github.com/Nicole-LijuanChen/Patterns-in-Amazon-customer-ratings/blob/master/images/average_ratings_plot.png?raw=true'></img>
+
 
 <!-- SECTION 3 -->
 ## Hypothesis Testing
+HO: The mean ratings of these two category is the same 
+H1: The mean ratings of these two category is different
+Alpha: 0.01 
+Using Welch's t-test to calculate P-value
+Ttest result:
+pvalue=1.9895758749664697e-152
+
+Conclusion:
+# p-value is small than alpha, there are enough advience to reject H0.
+# The mean ratings of Beauty and Books are different.
 
 
 
-<img src=‘images/hashtag_wordcloud.png’></img>
 
 
-```python
-# Create DF of Countries
-df_countries = pd.DataFrame({'country': list(cnt.keys()),
-                             'count': list(cnt.values())
-})
 
-# Create Pie Chart of Countries to mentions
-sns.set_context("poster", font_scale=0.6)
-plt.rc('font', weight='bold')
-f, ax = plt.subplots(figsize=(14, 8), dpi=80)
-
-labels = df_countries['country'].values
-sizes  = df_countries['count'].values
-
-explode = [0.75 if sizes[i] < 100 else 0.0 for i in range(len(df_countries))]
-ax.pie(sizes, explode = explode, labels = labels,
-       autopct = lambda x:'{:1.0f}%'.format(x) if x > 1 else '',
-       shadow=False, startangle=45)
-
-ax.axis('equal')
-ax.set_title('% of tweets per country',
-             bbox={'facecolor':'k', 'pad':5},color='w', fontsize=16);
-
-plt.savefig('images/location_breakdown_piechart.png')
-```
-
-<img src='https://github.com/atsai24/spark-case-study/blob/master/images/location_breakdown_piechart.png?raw=true'></img>
-
-
-The hypothesis on more actitivies will attract more followers does not seem to hold.
-As we see, there is no strong positive correlation observed from the scatter plot.
-
-
-<img src='https://github.com/atsai24/spark-case-study/blob/master/images/more_activties_more_followers.png?raw=true'></img>
 
 
 <!-- Another line -->
