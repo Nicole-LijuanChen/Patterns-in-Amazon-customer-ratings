@@ -125,7 +125,6 @@ Calculate the average ratings by year, and compare the two categories. The data 
 
 <img src='https://github.com/Nicole-LijuanChen/Patterns-in-Amazon-customer-ratings/blob/master/images/average_ratings_plot.png?raw=true'></img>
 
-
 <!-- SECTION 3 -->
 ## Hypothesis Testing
 #### Beauty VS Books
@@ -162,6 +161,9 @@ So I have 99% confidence to  conclude that the mean ratings of mean ratings of B
 ## Final thoughts
 The data analysis showes that the mean ratings of Beauty is higher than that of Books, which is contrary to my initial assumption. But the mean ratings cannot tells me everthing. When I compare their annual standard deviation, I find that the change in standard deviation of Books is smaller than that of Beauty. 
 This shows that customers have similar experience in buying books. Some of my assumptions are still close to the results of data analysis: Amazon has more experience in selling books than Beauty goods.
+
+<img src='https://github.com/Nicole-LijuanChen/Patterns-in-Amazon-customer-ratings/blob/master/images/mean_std_plot.png?raw=true'></img>
+
 
 
 ## Future Steps
