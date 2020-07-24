@@ -128,9 +128,9 @@ Calculate the average ratings by year, and compare the two categories. The data 
 <!-- SECTION 3 -->
 ## Hypothesis Testing
 #### Beauty VS Books
-HO: The mean ratings of these two category is the same 
+HO: The mean ratings of these two categories are the same 
 
-H1: The mean ratings of these two category is different
+H1: The mean ratings of these two categories are different
 
 Alpha: 𝛼 = 0.01
 
