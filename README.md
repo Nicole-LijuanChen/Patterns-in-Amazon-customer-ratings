@@ -85,7 +85,7 @@ Source: statista.com
 ### Hypothesis
 The hypothesis is that the average ratings in Books is different with Beauty, and the ratings in Books is higher than Beauty.
 
-The first reason I set this assumption is that the quality of the book is relatively easy to measure. However, There is a personal preference for the quality of the cosmetics. Secondly, Amazon was originally engaged in book selling, but it started sold Beauty goods in 2007. Amazon will be more experienced than Beauty in product selection, storage and deliver of books. Customers will have a better buying experience and give them higher ratings
+The first reason I set this assumption is that Amazon was originally engaged in book selling. But, it started sold Beauty goods in 2007. Amazon will be more experienced than Beauty in product selection, storage and deliver of books. Customers will have a better buying experience and give them higher ratings. Secondly,the quality of the book is relatively easy to measure. However.There is a personal preference for the quality of the Beauty product. For example, some people think the color of the same lipstick is too bright, while others think it is too dark.
 
 H0: The mean ratings of these two category is the same 
 
@@ -150,7 +150,7 @@ When the ratings of Books times 1.10, Using Welch's t-test to calculate P-value 
 Ttest result:
 pvalue=0.0009 (smaller than alpha 0.01 )
 
-So I have 99% confidence to  conclude that the mean ratings of mean ratings of Beauty is 10% greater than that of Books.
+So I have 99% confidence to  conclude that the mean ratings of Beauty is 10% greater than that of Books.
 
 
 
@@ -159,8 +159,7 @@ So I have 99% confidence to  conclude that the mean ratings of mean ratings of B
 
 
 ## Final thoughts
-The data analysis showes that the mean ratings of Beauty is higher than that of Books, which is contrary to my initial assumption. But the mean ratings cannot tells me everthing. When I compare their annual standard deviation, I find that the change in standard deviation of Books is smaller than that of Beauty. 
-This shows that customers have similar experience in buying books. Some of my assumptions are still close to the results of data analysis: Amazon has more experience in selling books than Beauty goods.
+The data analysis showes that the mean ratings of Beauty is higher than that of Books, which is contrary to my initial assumption. But the mean ratings cannot tells me everthing. When I compare their annual standard deviation, I find that the change in standard deviation of Books is smaller than that of Beauty. Customers rate Books more consistently. This shows that customers have similar experience in buying books. Some of my assumptions are still close to the results of data analysis: Amazon has more experience in selling books than Beauty goods.
 
 <img src='https://github.com/Nicole-LijuanChen/Patterns-in-Amazon-customer-ratings/blob/master/images/mean_std_plot.png?raw=true'></img>
 
