@@ -117,7 +117,7 @@ Data in src/data/, the raw datasets: All_Beauty_5.json      Books_5.json
 
 <!-- SECTION 2 -->
 ## Data Analysis
-According to the ratings count, more than 65% of customers scored a 5 on both products, but 91.8% customer rate Beauty at 5 star. It seems that customers are more satisfied with cosmetics than books. This requires further analysis of the data.
+According to the ratings count, more than 65% of customers scored a 5 on both products, but 91.8% customer rate Beauty at 5 star. It seems that customers are more satisfied with Beauty than Books. This requires further analysis of the data.
 
 <img src='https://github.com/Nicole-LijuanChen/Patterns-in-Amazon-customer-ratings/blob/master/images/ratings_count.png?raw=true' width='800' height='auto'></img>
 
@@ -128,31 +128,45 @@ Calculate the average ratings by year, and compare the two categories. The data 
 
 <!-- SECTION 3 -->
 ## Hypothesis Testing
+#### Beauty VS Books
 HO: The mean ratings of these two category is the same 
 
 H1: The mean ratings of these two category is different
 
-Alpha: 0.01 
+Alpha: 𝛼 = 0.01
 
 Using Welch's t-test to calculate P-value
 
 Ttest result:
-pvalue=1.9895758749664697e-152
+p-value = 1.9895758749664697e-152
 
 Conclusion:
 
 p-value is small than alpha, there are 99% confidence to reject H0.
-The mean ratings of Beauty and Books are different.
+The mean ratings between Beauty and Books are different.
+
+#### Beauty VS Books*1.10
+When the ratings of Books times 1.10, Using Welch's t-test to calculate P-value again.
+
+Ttest result:
+pvalue=0.0009 (smaller than alpha 0.01 )
+
+So I have 99% confidence to  conclude that the mean ratings of mean ratings of Beauty is 10% greater than that of Books.
+
+
+
+
+
 
 
 ## Final thoughts
-The data analysis showed that the mean ratings of Beauty was higher than that of Books, which is contrary to my initial assumption. But the mean ratings cannot tells me everthing. When I compare their annual standard deviation, I find that the change in standard deviation of Books is smaller than that of Beauty. 
+The data analysis showes that the mean ratings of Beauty is higher than that of Books, which is contrary to my initial assumption. But the mean ratings cannot tells me everthing. When I compare their annual standard deviation, I find that the change in standard deviation of Books is smaller than that of Beauty. 
 This shows that customers have similar experience in buying books. Some of my assumptions are still close to the results of data analysis: Amazon has more experience in selling books than Beauty goods.
 
 
 ## Future Steps
-Next, I want to dig more data, for example, analyze the high and low rating reviews. For a 5-point product, what keywords are included in the customer's reviews. For products with 2 or 1 ratings, what is the reason that customers are dissatisfied.
-Through deeper data mining, to predict whether a product will have a high rating.
+Next, I want to deep-dive the data, for example, analyze the characteristics of low-rating and high-rating reviews. For a 5-point product, what keywords are included in the customer's reviews. For products with 2 or 1 ratings, what is the reason that customers are dissatisfied.
+Through deeper data mining, to predict whether a product will get a high rating.
 
 
 
