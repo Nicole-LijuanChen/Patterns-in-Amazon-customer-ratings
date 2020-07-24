@@ -83,7 +83,7 @@ When shopping at Amazon, customer rating has been referred by almost all. Can th
 Source: statista.com 
 
 ### Hypothesis
-The hypothesis is that the average ratings in Books is different with Beauty, and the raings in Books is higher than Beauty.
+The hypothesis is that the average ratings in Books is different with Beauty, and the ratings in Books is higher than Beauty.
 
 The first reason I set this assumption is that the quality of the book is relatively easy to measure. However, There is a personal preference for the quality of the cosmetics. Secondly, Amazon was originally engaged in book selling, but it started sold Beauty goods in 2007. Amazon will be more experienced than Beauty in product selection, storage and deliver of books. Customers will have a better buying experience and give them higher ratings
 
