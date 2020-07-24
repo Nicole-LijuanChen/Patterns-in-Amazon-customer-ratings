@@ -22,7 +22,7 @@
 
 <!-- Brief Indented Explaination, you can choose what type you want -->
 <!-- Type 1 -->
->Compare the customer ratings in Beauty and Books category.
+>Compare Amazon customer ratings in Beauty and Books category.
 
 
 
